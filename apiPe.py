@@ -199,7 +199,7 @@ class DelayEvent(ResourceEvent):
 SearchResult = Union[Job, InBoxJob]
 
 
-class AdaptiveApiPe:
+class ApiPe:
     """Client for Adaptive PE API."""
     
     def __init__(self, server: str, token: str):

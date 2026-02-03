@@ -110,7 +110,7 @@ class Command(TypedDict):
 LiveMachines = List[LiveMachine]
 DashboardEntries = List[DashboardEntry]
 
-class AdaptiveApiLive:
+class ApiLive:
     def __init__(self, server: str, token: str):
         self.server = server 
         self.token = token
