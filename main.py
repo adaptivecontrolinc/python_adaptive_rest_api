@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     client = ApiPe(API_SERVER, API_TOKEN)
     job_id = "R1010006"
-    history = client.history(job_id) # , tags=["01.TargetTemp", "01.State"])
+    history = client.history(job_id, tags=["01.TargetTemp", "01.State"])
     if history:
         csv = history_to_csv(history)
         save_path = f"{job_id}.csv"
